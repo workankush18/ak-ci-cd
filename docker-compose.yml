@@ -1,0 +1,5 @@
+services:
+  onboarding:
+    image: ankushmahant18/onboarding-service
+    ports:
+      - "3000:3000"
