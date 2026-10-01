@@ -20,7 +20,9 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /home/ubuntu/ak-ci-cd
+            sudo su
+            cd
+            cd ak-ci-cd
 
             docker compose pull
             docker compose up -d
