@@ -23,7 +23,6 @@ jobs:
             cd /home/ubuntu/ak-ci-cd
 
             docker compose pull
-
             docker compose up -d
 
             docker image prune -f
