@@ -21,8 +21,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo su
-            cd
-            cd ak-ci-cd
+            cd /root/ak-ci-cd
 
             docker compose pull
             docker compose up -d
