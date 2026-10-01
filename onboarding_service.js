@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Onboarding service running");
+    res.send("Onboarding service running test 1");
 });
 
 const PORT = process.env.PORT || 3000;
